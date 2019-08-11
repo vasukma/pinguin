@@ -78,7 +78,7 @@ public class Hosts {// extends LinkedList {
 				reportString.append("AVAILABLE");
 			else
 				reportString.append("UNAVAILABLE");
-			reportString.append("\r\n");
+			reportString.append(System.getProperty("line.separator"));
 			reportFileWriter.write(reportString.toString());
 			reportString.delete(0, reportString.length());
 		}
